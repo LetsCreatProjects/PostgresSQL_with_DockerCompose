@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+    postgres:
+        image: postgres:latest
+        restart: always
+        env_file:
+          - .env # The name of your environment file (the one at the repository root)
+        logging:
+          options:
+            max-size: 10m
+            max-file: "3"
+        ports:
+          - '5438:5432'
+        volumes: 
+          - ./chinavsindia.sql:/docker-entrypoint-initdb.d/chinavsindia.sql
