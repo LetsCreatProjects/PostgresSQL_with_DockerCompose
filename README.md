@@ -48,7 +48,7 @@ postgres=# SELECT * FROM chinavsindia;
     18 |  1960 |  660408054 |  450547675
     19 |  1955 |  612241552 |  409880606
 (19 rows)
-
+```
 
 <!-- 
 sudo docker exec -it 35e177177321 bash
