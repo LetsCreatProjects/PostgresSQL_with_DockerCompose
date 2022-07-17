@@ -6,10 +6,11 @@
 
 - create .sql file and put it in this structure:
 
+```bash
 Project
 ├── docker-compose.yml (File)
 ├── docker_postgres_init.sql (File)
-
+```
 - run command:
 sudo docker-compose up -d
 
@@ -24,6 +25,7 @@ root@b37ca1ca5ef3:/# psql -U postgres
 
 postgres=# SELECT * FROM chinavsindia;
 
+```bash
  Index | China |   India    |    Year    
 -------+-------+------------+------------
      1 |  2021 | 1444216102 | 1393409033
